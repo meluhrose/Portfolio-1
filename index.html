@@ -6,8 +6,11 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -15,7 +18,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -24,64 +27,59 @@
 
     <main>
         <section id="home">
-            <div>
-                <img src="assets/mila-portfolio.jpg" alt="Profile Picture" class="profile-picture"/>
+            <div class="home">
+                <div class="home-image">
+                    <img src="assets/mila-portfolio.jpg" alt="Profile Picture" class="profile-picture"/>
+                </div>
+                <div class="home-text">
+                    <h1 class="my-name">Mila Vasshus</h1>
+                    <p>Hi there!👋 I am currently a student at Noroff, learning Frontend Development. I enjoy turning ideas into digital experiences with thoughful design and a focus on usability and simplicity.</p>
+                    <p>
+                    When I'm not coding or designing, you'll find me experimenting with fashion, spinning vinyls, or hanging out with me dog.
+                    </p>
+                    <p>
+                        Feel free to explore my portfolio and reach out if you'd like to connect!
+                    </p>
+                </div>
             </div>
-            <h1>Mila Vasshus</h1>
-            <p>Hi there, and welcome to my portfolio!</p>
-            <p>
-                Here I'm sharing the projects I've been working on this year as I continue to grow my skills and knowledge as a frontend developer.
-            </p>
         </section>
 
-        <section id="about">
-            <div class="about-me">
-                <h2>About Me</h2>
-                <p>I'm currently studying Frontend Development at Noroff Education AS, where I'm learning how to design and build responsive, user friendly web applications. So far I've gained knowledge in HTML, CSS, JavaScript, UI/UX design, and how to manage projects using GitHub. I love designing and seeing the code come to life.</p>
-            </div>
-
-            <div class="stacks">
-                <h2>My Stacks</h2>
-                <img src="assets/html-logo.png" alt="HTML Logo" class="stack-logo"/>
-                <img src="assets/css-logo.png" alt="CSS Logo" class="stack-logo"/>
-                <img src="assets/js-logo.png" alt="JavaScript Logo" class="stack-logo"/>
-                <img src="assets/figma-logo.png" alt="Figma Logo" class="stack-logo"/>
-                <img src="assets/github-mark.png" alt="GitHub Logo" class="stack-logo"/>
-            </div>
-            <div class="documents">
-                <p>
-                    You can find my resume and cover letter in the links below. They provide more details about my education, skills, and experience.
-                </p>
-                <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="assets/cover-letter.pdf" target="_blank" rel="noopener noreferrer">Cover Letter</a>
+        <section id="skills">
+            <div class="skills">
+                <h1>My Skills</h1>
+                <img src="assets/stack-icons/html-logo.png" alt="HTML Logo" class="stack-logo"/>
+                <img src="assets/stack-icons/css-logo.png" alt="CSS Logo" class="stack-logo"/>
+                <img src="assets/stack-icons/js-logo.png" alt="JavaScript Logo" class="stack-logo"/>
+                <img src="assets/stack-icons/figma-logo.png" alt="Figma Logo" class="stack-logo"/>
+                <img src="assets/stack-icons/github-mark.png" alt="GitHub Logo" class="stack-logo"/>
             </div>
         </section>
 
         <section id="projects">
             <div class="projects">
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <div class="project-1">
+                <img src="assets/projects-image/Hotview-labs.png" alt="Homepage HotView Labs" class="project-image"/>
                 <p class="project-title">Project Exam 1: HotView Labs</p>
                 <p>
                     Built a responsive e-commerce site with API-fetched products, shopping cart, and clean UI for my Project Exam 1.
                 </p>
-                <img src="assets/Hotview-labs.png" alt="Homepage HotView Labs" class="project-image" onclick="openLightbox(this.src, this.alt)"/>
                 <a href="https://meluhrose.github.io/" target="_blank" rel="noopener noreferrer">Link to HotView Labs</a>
                 <a href="https://github.com/meluhrose/meluhrose.github.io" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>
             <div class="project-2">
+                <img src="assets/projects-image/square-eyes.png" alt="Homepage Square Eyes" class="project-image"/>
                 <p class="project-title">Cross Course Project & JavaScript 1: Square Eyes</p>
                 <p>
                     My first full website project, learning HTML, CSS, JavaScript, and essential frontend principles through building a streaming platform.
                 </p>
-                <img src="assets/square-eyes.png" alt="Homepage Square Eyes" class="project-image" onclick="openLightbox(this.src, this.alt)"/>
                 <a href="https://meluhrose.github.io/SquareEyes/" target="_blank" rel="noopener noreferrer">Link to Square Eyes</a>
                 <a href="https://github.com/meluhrose/SquareEyes" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>
             <div class="project-3">
+                <img src="assets/projects-image/community-science-museum.png" alt="Homepage Community Science Museum" class="project-image"/>
                 <p class="project-title">Semester Project 1: Community Science Museum</p>
                 <p>Designed and built a children-friendly science museum website using Figma, HTML, and CSS with a clean, responsive layout.</p>
-                <img src="assets/community-science-museum.png" alt="Homepage Community Science Museum" class="project-image" onclick="openLightbox(this.src, this.alt)"/>
                 <a href="https://meluhrose.github.io/Semester-project-1" target="_blank" rel="noopener noreferrer">Link to Community Science Museum</a>
                 <a href="https://github.com/meluhrose/Semester-project-1" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>
@@ -90,25 +88,18 @@
 
         <section id="contact">
             <div class="contact">
-            <h2>Contact</h2>
+            <h1>Contact</h1>
             <p>
                 Whether you’re interested in my work or want to build something together, feel free to reach out!
             </p>
             <p>Email: <a href="mailto:meluhrose@gmail.com">meluhrose@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/meluhrose" target="_blank" rel="noopener noreferrer">meluhrose</a></p>
             </div>
+                <a href="assets/documents/MilaVasshusCV.pdf" download="Mila_Vasshus_Resume.pdf">Download Resume</a>
+                <a href="assets/documents/MilaVasshusCoverLetter.pdf" download="Mila_Vasshus_Cover_Letter.pdf">Download Cover Letter</a>
         </section>
     </main>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <span class="close-lightbox">&times;</span>
-        <img id="lightbox-img" src="" alt="">
-        <div id="lightbox-caption"></div>
-    </div>
-
     <footer>
-        <p>&copy; 2025 Milagros Vasshus</p>
     </footer>
 </body>
 </html>
