@@ -18,14 +18,14 @@
         margin: 5px 0;
     }
 
-    /* Home section - stack vertically on tablets */
-    .home {
+    /* About me section - stack vertically on tablets */
+    .about-me {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
 
-    .home-text {
+    .about-text {
         text-align: center;
     }
 
