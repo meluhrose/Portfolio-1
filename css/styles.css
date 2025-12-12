@@ -257,6 +257,7 @@ section {
     align-items: center;
     gap: 10px;
     margin: 10px 0;
+    white-space: nowrap;
 }
 
 .email-icon, .github-icon, .cover-letter-icon, .resume-icon {
